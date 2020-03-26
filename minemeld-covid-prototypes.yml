@@ -1,0 +1,114 @@
+author: minemeld-web
+description: Local prototype library managed via MineMeld WebUI
+prototypes:
+    covid_phishing_domain:
+        class: minemeld.ft.json.SimpleJSON
+        config:
+            age_out:
+                default: null
+                interval: 1800
+                sudden_death: true
+            attributes:
+                confidence: 100
+                share_level: green
+                type: URL
+            extractor: '[?value.type==''domain'']'
+            fields:
+            - stix_package_information_source
+            - share_level
+            - sources
+            - stix_package_description
+            - stix_package_short_description
+            - first_seen
+            - type
+            - stix_package_title
+            - last_seen
+            indicator: indicator
+            prefix: cybersaiyan
+            source_name: cybersaiyan.covid
+            url: https://infosharing.cybersaiyan.it/feeds/CS-COMMUNITY-HTTP?v=json
+        description: 'feeds on phishing for COVID-19
+
+            https://infosharing.cybersaiyan.it - IOCs are verified
+            by the owner (using services from d3labs)'
+        development_status: EXPERIMENTAL
+        indicator_types:
+        - domain
+        node_type: miner
+        tags:
+        - ConfidenceHigh
+        - ShareLevelGreen
+    covid_phishing_ipv4:
+        class: minemeld.ft.json.SimpleJSON
+        config:
+            age_out:
+                default: null
+                interval: 1800
+                sudden_death: true
+            attributes:
+                confidence: 100
+                share_level: green
+                type: URL
+            extractor: '[?value.type==''IPv4'']'
+            fields:
+            - stix_package_information_source
+            - share_level
+            - sources
+            - stix_package_description
+            - stix_package_short_description
+            - first_seen
+            - type
+            - stix_package_title
+            - last_seen
+            indicator: indicator
+            prefix: cybersaiyan
+            source_name: cybersaiyan.covid
+            url: https://infosharing.cybersaiyan.it/feeds/CS-COMMUNITY-HTTP?v=json
+        description: 'feeds on phishing for COVID-19
+
+            https://infosharing.cybersaiyan.it - IOCs are verified
+            by the owner (using services from d3labs)'
+        development_status: EXPERIMENTAL
+        indicator_types:
+        - IPv4
+        node_type: miner
+        tags:
+        - ConfidenceHigh
+        - ShareLevelGreen
+    covid_phishing_url:
+        class: minemeld.ft.json.SimpleJSON
+        config:
+            age_out:
+                default: null
+                interval: 1800
+                sudden_death: true
+            attributes:
+                confidence: 100
+                share_level: green
+                type: URL
+            extractor: '[?value.type==''URL'']'
+            fields:
+            - stix_package_information_source
+            - share_level
+            - sources
+            - stix_package_description
+            - stix_package_short_description
+            - first_seen
+            - type
+            - stix_package_title
+            - last_seen
+            indicator: indicator
+            prefix: cybersaiyan
+            source_name: cybersaiyan.covid
+            url: https://infosharing.cybersaiyan.it/feeds/CS-COMMUNITY-HTTP?v=json
+        description: 'feeds on phishing for COVID-19
+
+            https://infosharing.cybersaiyan.it - IOCs are verified
+            by the owner (using services from d3labs)'
+        development_status: EXPERIMENTAL
+        indicator_types:
+        - URL
+        node_type: miner
+        tags:
+        - ConfidenceHigh
+        - ShareLevelGreen

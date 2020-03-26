@@ -1,0 +1,43 @@
+nodes:
+  covid_phishing_url:
+    inputs: []
+    output: true
+    prototype: minemeldlocal.covid_phishing_url
+  covid_phishing_ipv4:
+    inputs: []
+    output: true
+    prototype: minemeldlocal.covid_phishing_ipv4
+  covid_phishing_domain:
+    inputs: []
+    output: true
+    prototype: minemeldlocal.covid_phishing_domain
+  covid_agg_domain:
+    inputs:
+      - covid_phishing_domain
+    output: true
+    prototype: stdlib.aggregatorDomain
+  covid_agg_ipv4:
+    inputs:
+      - covid_phishing_ipv4
+    output: true
+    prototype: stdlib.aggregatorIPv4Generic
+  covid_agg_url:
+    inputs:
+      - covid_phishing_url
+    output: true
+    prototype: stdlib.aggregatorURL
+  covid_url_feed:
+    inputs:
+      - covid_phishing_url
+    output: false
+    prototype: stdlib.feedHCGreen
+  covid_domain_feed:
+    inputs:
+      - covid_phishing_domain
+    output: false
+    prototype: stdlib.feedHCGreen
+  covid_ipv4_feed:
+    inputs:
+      - covid_phishing_ipv4
+    output: false
+    prototype: stdlib.feedHCGreen
