@@ -11,7 +11,7 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: green
-                type: URL
+                type: domain
             extractor: '[?value.type==''domain'']'
             fields:
             - stix_package_information_source
@@ -27,9 +27,8 @@ prototypes:
             prefix: cybersaiyan
             source_name: cybersaiyan.covid
             url: https://infosharing.cybersaiyan.it/feeds/CS-COMMUNITY-HTTP?v=json
-        description: 'feeds on phishing for COVID-19
-
-            https://infosharing.cybersaiyan.it - IOCs are verified
+        description: 'feeds on phishing for COVID-19 
+            https://infosharing.cybersaiyan.it - IOCs are verified 
             by the owner (using services from d3labs)'
         development_status: EXPERIMENTAL
         indicator_types:
@@ -48,7 +47,7 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: green
-                type: URL
+                type: IPv4
             extractor: '[?value.type==''IPv4'']'
             fields:
             - stix_package_information_source
@@ -64,9 +63,8 @@ prototypes:
             prefix: cybersaiyan
             source_name: cybersaiyan.covid
             url: https://infosharing.cybersaiyan.it/feeds/CS-COMMUNITY-HTTP?v=json
-        description: 'feeds on phishing for COVID-19
-
-            https://infosharing.cybersaiyan.it - IOCs are verified
+        description: 'feeds on phishing for COVID-19 
+            https://infosharing.cybersaiyan.it - IOCs are verified 
             by the owner (using services from d3labs)'
         development_status: EXPERIMENTAL
         indicator_types:
@@ -101,9 +99,8 @@ prototypes:
             prefix: cybersaiyan
             source_name: cybersaiyan.covid
             url: https://infosharing.cybersaiyan.it/feeds/CS-COMMUNITY-HTTP?v=json
-        description: 'feeds on phishing for COVID-19
-
-            https://infosharing.cybersaiyan.it - IOCs are verified
+        description: 'feeds on phishing for COVID-19 
+            https://infosharing.cybersaiyan.it - IOCs are verified 
             by the owner (using services from d3labs)'
         development_status: EXPERIMENTAL
         indicator_types:
