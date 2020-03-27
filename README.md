@@ -15,9 +15,9 @@ First, install the prototypes by copying the contents of the minemeld-covid-prot
 
 If the file already exists, be sure to merge only the relevant lines and not duplicate the header of the file.
 
-Then restart the minemeld engine.
-
 edit: It likely also works to just place the minemeld-covid-prototypes.yml file in the folder /opt/minemeld/local/prototypes
+
+Then restart the minemeld engine.
 
 
 ### Part 2a: use canned configuration
