@@ -17,6 +17,8 @@ If the file already exists, be sure to merge only the relevant lines and not dup
 
 Then restart the minemeld engine.
 
+edit: It likely also works to just place the minemeld-covid-prototypes.yml file in the folder /opt/minemeld/local/prototypes
+
 
 ### Part 2a: use canned configuration
 
