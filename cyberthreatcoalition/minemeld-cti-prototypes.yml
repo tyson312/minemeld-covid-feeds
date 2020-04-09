@@ -11,7 +11,7 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: green
-                type: IPv4
+                type: domain
             interval: 3600
             source_name: ctc.covid
             url: https://raw.githubusercontent.com/COVID-19-CTI-LEAGUE/PUBLIC_RELEASE/master/Cyber_threat_Coalition_domain_Blacklist.txt
@@ -57,7 +57,7 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: green
-                type: IPv4
+                type: URL
             interval: 3600
             source_name: ctc.covid
             url: https://raw.githubusercontent.com/COVID-19-CTI-LEAGUE/PUBLIC_RELEASE/master/Cyber_Threat_Coalition_url_Blacklist.txt
