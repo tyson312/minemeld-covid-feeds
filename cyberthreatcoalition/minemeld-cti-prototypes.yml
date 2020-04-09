@@ -1,0 +1,72 @@
+author: minemeld-web
+description: Local prototype library managed via MineMeld WebUI
+prototypes:
+    covid_cti_league_domain:
+        class: minemeld.ft.http.HttpFT
+        config:
+            age_out:
+                default: null
+                interval: 1800
+                sudden_death: true
+            attributes:
+                confidence: 100
+                share_level: green
+                type: IPv4
+            interval: 3600
+            source_name: ctc.covid
+            url: https://raw.githubusercontent.com/COVID-19-CTI-LEAGUE/PUBLIC_RELEASE/master/Cyber_threat_Coalition_domain_Blacklist.txt
+        description: 'COVID-19 IOC''s from the Cyber Threat Coalition : Blacklists
+            by hash, IP and domain. Vetted list of known bad actors. source: https://github.com/COVID-19-CTI-LEAGUE/PUBLIC_RELEASE'
+        development_status: EXPERIMENTAL
+        indicator_types:
+        - domain
+        node_type: miner
+        tags:
+        - ConfidenceHigh
+        - ShareLevelGreen
+    covid_cti_league_ipv4:
+        class: minemeld.ft.http.HttpFT
+        config:
+            age_out:
+                default: null
+                interval: 1800
+                sudden_death: true
+            attributes:
+                confidence: 100
+                share_level: green
+                type: IPv4
+            interval: 3600
+            source_name: ctc.covid
+            url: https://raw.githubusercontent.com/COVID-19-CTI-LEAGUE/PUBLIC_RELEASE/master/Cyber_Threat_coalition_ip_Blacklist.txt
+        description: 'COVID-19 IOC''s from the Cyber Threat Coalition : Blacklists
+            by hash, IP and domain. Vetted list of known bad actors. source: https://github.com/COVID-19-CTI-LEAGUE/PUBLIC_RELEASE'
+        development_status: EXPERIMENTAL
+        indicator_types:
+        - IPv4
+        node_type: miner
+        tags:
+        - ConfidenceHigh
+        - ShareLevelGreen
+    covid_cti_league_url:
+        class: minemeld.ft.http.HttpFT
+        config:
+            age_out:
+                default: null
+                interval: 1800
+                sudden_death: true
+            attributes:
+                confidence: 100
+                share_level: green
+                type: IPv4
+            interval: 3600
+            source_name: ctc.covid
+            url: https://raw.githubusercontent.com/COVID-19-CTI-LEAGUE/PUBLIC_RELEASE/master/Cyber_Threat_Coalition_url_Blacklist.txt
+        description: 'COVID-19 IOC''s from the Cyber Threat Coalition : Blacklists
+            by hash, IP and domain. Vetted list of known bad actors. source: https://github.com/COVID-19-CTI-LEAGUE/PUBLIC_RELEASE'
+        development_status: EXPERIMENTAL
+        indicator_types:
+        - URL
+        node_type: miner
+        tags:
+        - ConfidenceHigh
+        - ShareLevelGreen
